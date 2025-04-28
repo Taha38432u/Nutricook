@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .input {
+    @apply w-full rounded-lg border border-gray-600 bg-gray-700 px-4 py-2 focus:border-blue-400 focus:outline-none;
+  }
+}
+
+@layer utilities {
+  .custom-scrollbar {
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #020617 #0303278e; /* Thumb (slate-950) & Track (slate-500) */
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 3px; /* Scrollbar width */
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #020617; /* slate-950 */
+    border-radius: 10px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #64748b; /* slate-500 */
+    border-radius: 10px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #475569; /* Darker slate-600 */
+  }
+}
